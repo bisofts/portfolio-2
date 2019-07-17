@@ -1,7 +1,7 @@
 :root {
   font-size: 10px;
-  --clr-primary: rgba(63, 21, 79, 1);
-	--clr-secondary: rgba(228, 0, 43, 1);
+  --clr-plum: rgba(63, 21, 79, 1);
+	--clr-cherry: rgba(228, 0, 43, 1);
   --clr-light: rgba(248, 248, 248,1);
   --clr-dark: rgba(80, 80, 80,1);
 	--clr-dark-80: rgba(80, 80, 80,0.8);
@@ -31,13 +31,13 @@ nav ul li:not(:first-child) {
 nav ul li a {
   display: inline-block;
   outline: none;
-  color: var(--clr-primary);
+  color: var(--clr-plum);
   font-size: 1.6rem;
   text-decoration: none;
   letter-spacing: 0.04em;
 }
 nav ul li a:hover {
-  color: var(--clr-secondary);
+  color: var(--clr-cherry);
   text-decoration: none;
 }
 /* end nav */
@@ -95,16 +95,16 @@ h3 {
   font-size: 3rem;
 }
 h1,h2,h3{
-  color: var(--clr-primary);
+  color: var(--clr-plum);
 }
 /* typography end */
 
 /* start utilities */
-.textprimary {
-  color: var(--clr-primary);
+.textplum {
+  color: var(--clr-plum);
 }
-.textsecondary {
-  color: var(--clr-secondary);
+.textcherry {
+  color: var(--clr-cherry);
 }
 .textlight {
   color: var(--clr-light);
@@ -124,11 +124,11 @@ h1,h2,h3{
 .bgdark {
   background-color: var(--clr-dark);
 }
-.bgprimary {
-  background-color: var(--clr-primary);
+.bgplum {
+  background-color: var(--clr-plum);
 }
-.bgsecondary {
-  background-color: var(--clr-secondary);
+.bgcherry {
+  background-color: var(--clr-cherry);
 }
 .fullwidth {
   width: 100vw;
@@ -147,12 +147,12 @@ h1,h2,h3{
 /* end utilities */
 
 /* start typography */
-.textprimary {
-  color: var(--clr-primary);
+.textplum {
+  color: var(--clr-plum);
 }
 
-.textsecondary {
-  color: var(--clr-secondary);
+.textcherry {
+  color: var(--clr-cherry);
 }
 
 .textlight {
@@ -179,12 +179,12 @@ h1,h2,h3{
   background-color: var(--clr-dark);
 }
 
-.bgprimary {
-  background-color: var(--clr-primary);
+.bgplum {
+  background-color: var(--clr-plum);
 }
 
-.bgsecondary {
-  background-color: var(--clr-secondary);
+.bgcherry {
+  background-color: var(--clr-cherry);
 }
 
 .fullwidth {
@@ -212,7 +212,9 @@ h1,h2,h3{
   margin: 0 auto;
   background-color: bisque;
 }
-
+.typed-cursor {
+  color: var(--clr-cherry);
+}
 
 
 
@@ -225,7 +227,7 @@ h1,h2,h3{
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--clr-primary);
+    background: var(--clr-plum);
     opacity: 0;
     transition: all 0.2s ease;
   }
@@ -328,9 +330,9 @@ h1,h2,h3{
 /* underline begin */
 a{
   text-decoration: none;
-  color: var(--clr-secondary);
+  color: var(--clr-cherry);
   font-weight: 600;
-	background-image: linear-gradient(var(--clr-secondary), var(--clr-secondary));
+	background-image: linear-gradient(var(--clr-cherry), var(--clr-cherry));
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
@@ -339,6 +341,6 @@ a{
 
 a:hover{
 	background-size: 100% 2px;
-	color: var(--clr-secondary);
+	color: var(--clr-cherry);
 	/* end underline animation */
 }

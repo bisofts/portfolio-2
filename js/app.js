@@ -21,3 +21,10 @@ new Vue({
 // new Vue({
 //   el: '#vuefooter'
 // });
+
+// typed js
+var typed = new Typed('#typed', {
+  strings: ["ux / ui", "graphic", "motion", "print", "all sorts of"],
+  showCursor: true, typeSpeed: 120, loop: false, backDelay: 1500,
+  backSpeed: 80, autoInsertCss: true, cursorChar: '_'
+});
