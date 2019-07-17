@@ -204,9 +204,14 @@ h1,h2,h3{
 .clearfix:after {
   clear: both;
 }
+/* end utilities */
 
-
-
+#vuefooter{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: bisque;
+}
 
 
 
