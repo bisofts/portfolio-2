@@ -1,0 +1,47 @@
+.textplum {
+  color: var(--clr-plum);
+}
+.textcherry {
+  color: var(--clr-cherry);
+}
+.textlight {
+  color: var(--clr-light);
+}
+.textdark {
+  color: var(--clr-dark);
+}
+.smallcaps {
+  font-variant: small-caps;
+}
+.textcenter {
+  text-align: center;
+}
+.bglight {
+  background-color: var(--clr-light);
+}
+.bgdark {
+  background-color: var(--clr-dark);
+}
+.bgplum {
+  background-color: var(--clr-plum);
+}
+.bgcherry {
+  background-color: var(--clr-cherry);
+}
+.fullwidth {
+  width: 100vw;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden {
+  display: none;
+}

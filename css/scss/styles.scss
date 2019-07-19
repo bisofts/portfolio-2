@@ -1,0 +1,50 @@
+@import '_normalize';
+@import '_variables';
+@import '_nav';
+@import '_utilities';
+@import '_typography';
+
+
+/* underline begin */
+a{
+  text-decoration: none;
+  color: var(--clr-cherry);
+  font-weight: 400;
+	background-image: linear-gradient(var(--clr-cherry), var(--clr-cherry));
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 0.2rem;
+	transition: background-size .2s;
+}
+
+a:hover{
+	background-size: 100% 0.2rem;
+	color: var(--clr-plum);
+  text-shadow:
+   -1px -1px 0 var(--clr-light),  
+    1px -1px 0 var(--clr-light),
+    -1px 1px 0 var(--clr-light),
+     1px 1px 0 var(--clr-light);
+}
+/* end underline animation */
+
+#vue-container{
+  min-height: 100vh;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: var(--nav-height) 1fr 1fr var(--footer-height);
+}
+
+.hero{
+
+}
+.content{
+
+}
+#footer{
+  font-size: 1.4rem;
+  width: 100%;
+  height: var(--footer-height);
+  background-color: bisque;
+}

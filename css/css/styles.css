@@ -1,0 +1,546 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+button, hr, input {
+  overflow: visible;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+}
+
+progress, sub, sup {
+  vertical-align: baseline;
+}
+
+[type=checkbox], [type=radio], legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: ButtonText dotted 1px;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden], template {
+  display: none;
+}
+
+:root {
+  --clr-plum: #3f154f;
+  --clr-plum-80: rgba(63, 21, 79, 0.8);
+  --clr-cherry: #e4002b;
+  --clr-light: #f8f8f8;
+  --clr-dark: #505050;
+  --clr-dark-80: rgba(80, 80, 80, 0.8);
+  --what: 30px;
+  --nav-height: 7rem;
+  --footer-height: 7rem;
+}
+
+:root {
+  font-size: 10px;
+}
+
+#vue-nav {
+  min-height: var(--nav-height);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "nav-logo nav";
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-light);
+  z-index: 100;
+}
+
+#nav-logo > img {
+  height: 5rem;
+  margin-top: 0.5rem;
+}
+
+nav {
+  padding: 0px;
+  font-weight: 600;
+  font-family: 'nunito', sans-serif;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: var(--clr-cherry);
+  font-size: 1.6rem;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+nav ul li a:hover {
+  color: var(--clr-plum);
+  text-decoration: none;
+  text-shadow: none;
+}
+
+@media screen and (max-width: 560px) {
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--clr-plum);
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .nav-container ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+    padding: 0px;
+  }
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .nav-container ul li:nth-child(1) a {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .nav-container ul li:nth-child(2) a {
+    -webkit-transition-delay: 0.125s;
+            transition-delay: 0.125s;
+  }
+  .nav-container ul li:nth-child(3) a {
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+  .nav-container ul li:nth-child(4) a {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  .nav-container ul li a {
+    padding: 10px 0px;
+    opacity: 0;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .nav-container ul li a:hover {
+    color: var(--clr-cherry);
+  }
+  .nav-open {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--clr-cherry);
+    /* background: #1f2227; */
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+  #vue-nav {
+    min-height: calc(var(--nav-height) - 0.5rem);
+  }
+  #nav-logo > img {
+    height: 3rem;
+    margin-left: 1.6rem;
+  }
+}
+
+#nav:checked + .nav-open {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav:checked + .nav-open i {
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+#nav:checked + .nav-open i:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(180deg);
+          transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+
+#nav:checked + .nav-open i:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(90deg);
+          transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.textplum {
+  color: var(--clr-plum);
+}
+
+.textcherry {
+  color: var(--clr-cherry);
+}
+
+.textlight {
+  color: var(--clr-light);
+}
+
+.textdark {
+  color: var(--clr-dark);
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.bglight {
+  background-color: var(--clr-light);
+}
+
+.bgdark {
+  background-color: var(--clr-dark);
+}
+
+.bgplum {
+  background-color: var(--clr-plum);
+}
+
+.bgcherry {
+  background-color: var(--clr-cherry);
+}
+
+.fullwidth {
+  width: 100vw;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Work Sans"), local("WorkSans-Regular"), url("../../fonts/work-sans-v3-latin-regular.woff2") format("woff2"), url("../../fonts/work-sans-v3-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito"), local("Nunito-Regular"), url("../../fonts/Nunito-Regular.woff2") format("woff2"), url("../../fonts/Nunito-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito-SemiBold"), url("../../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito-ExtraBold"), url("../../fonts/Nunito-ExtraBold.woff2") format("woff2"), url("../../fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body, html {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  /* color: var(--clr-dark); */
+  color: var(--clr-plum-80);
+  background-color: var(--clr-light);
+  min-height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: var(--clr-plum);
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* underline begin */
+a {
+  text-decoration: none;
+  color: var(--clr-cherry);
+  font-weight: 400;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--clr-cherry)), to(var(--clr-cherry)));
+  background-image: linear-gradient(var(--clr-cherry), var(--clr-cherry));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 0.2rem;
+  -webkit-transition: background-size .2s;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 100% 0.2rem;
+  color: var(--clr-plum);
+  text-shadow: -1px -1px 0 var(--clr-light), 1px -1px 0 var(--clr-light), -1px 1px 0 var(--clr-light), 1px 1px 0 var(--clr-light);
+}
+
+/* end underline animation */
+#vue-container {
+  min-height: 100vh;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: var(--nav-height) 1fr 1fr var(--footer-height);
+      grid-template-rows: var(--nav-height) 1fr 1fr var(--footer-height);
+}
+
+#footer {
+  font-size: 1.4rem;
+  width: 100%;
+  height: var(--footer-height);
+  background-color: bisque;
+}
+/*# sourceMappingURL=styles.css.map */

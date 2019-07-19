@@ -28,36 +28,40 @@
   <meta property="og:image" content="https://website.com/img/filename.jpg" />
   <meta property="og:image:alt" content="description of the image for accessibility" />
   <!-- CHANGE/REMOVE GOOGLE FONTS EXTERNAL LINK -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> -->
   <!-- CHANGE/REMOVE MILTIPLE GOOGLE FONTS EXTERNAL LINK -->
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:800|Vollkorn|Work Sans" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Catamaran:800|Vollkorn|Work Sans" rel="stylesheet"> -->
   <!-- CHANGE/REMOVE SELF-HOSTED FONTS PRELOAD LINK -->
   <link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff2" crossorigin>
   <!-- MINIFY CSS AND CHANGE LINK -->
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/css/styles.css">
   <!-- FEATHER ICONS MIN.JS LINK -->
   <script src="/js/feather.min.js"></script>
   <script src="/js/vue.min.js"></script>
-  <script src="/js/typed.js"></script>
+  <!-- <script src="/js/typed.js"></script> -->
+  <script src="/js/typeit.min.js"></script>
 </head>
 
 <body>
-  <div id="vuecontainer">
-    <div id="vuenav">
-      <vuenav></vuenav>
+  <div id="vue-container">
+    <div id="vue-nav">
+      <vue-logo></vue-logo>
+      <vue-nav></vue-nav>
     </div>
-
-    <div class="introtext">
-      <h1>Mike Sonnenberg</h1>
-      <h2> <span id="typed"></span>design</h2>
-
+    <div class="hero">
+      <div class="introtext">
+        <h1>Mike Sonnenberg</h1>
+        <h2> <span id="typeit"></span></h2>
+      </div>
     </div>
-
-    kjn adskfjaksdflka sdflkaf sdkasd jfnkasjdfn Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis qui reprehenderit alias distinctio aut. Fugiat eligendi tempora, quo omnis itaque unde eveniet autem adipisci voluptate. Qui dicta deleniti sint voluptate rem labore tempora quisquam modi impedit itaque, velit autem debitis similique architecto minus aperiam iste nobis, nesciunt sunt non?
-    <div id="vuefooter">
-      <vuefooter></vuefooter>
+    <div class="content">
+      <p>kjn adskfjaksdflka sdflkaf sdkasd jfnkasjdfn Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis qui reprehenderit alias distinctio aut. <a href="#">Fugiat eligendi tempora, quo omnis</a> itaque unde eveniet autem adipisci voluptate. Qui dicta deleniti sint voluptate rem labore tempora quisquam modi impedit itaque, velit autem debitis similique architecto minus aperiam iste nobis, nesciunt sunt non?</p>
+      <p>kjn adskfjaksdflka sdflkaf sdkasd jfnkasjdfn Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis qui reprehenderit alias distinctio aut. <a href="#">Fugiat eligendi tempora, quo omnis</a> itaque unde eveniet autem adipisci voluptate. Qui dicta deleniti sint voluptate rem labore tempora quisquam modi impedit itaque, velit autem debitis similique architecto minus aperiam iste nobis, nesciunt sunt non?</p>
+    </div>
+    <div id="vue-footer">
+      <vue-footer></vue-footer>
     </div>
   </div>
 </body>
