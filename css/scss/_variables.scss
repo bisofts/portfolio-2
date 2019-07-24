@@ -14,7 +14,5 @@ $variables: (
   @each $property, $value in $variables{
     --#{$property}: #{$value};
   }
-}
-:root{
   font-size: 10px;
 }
