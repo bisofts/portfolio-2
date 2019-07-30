@@ -48,3 +48,7 @@ a:hover{
   height: var(--footer-height);
   background-color: bisque;
 }
+
+.gradient{
+  background: linear-gradient(45deg, rgb(89, 6, 184),rgb(246, 151, 67));
+}
