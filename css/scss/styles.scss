@@ -28,12 +28,15 @@ a:hover{
      1px 1px 0 var(--clr-light);
 }
 /* end underline animation */
+html{
+  scroll-behavior: smooth;
+}
 img{
   max-width: 100%;
 }
 #vue-container{
   min-height: 100vh;
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
   display: grid;
   grid-template-rows: var(--nav-height) var(--hero-height) var(--arrow-height) auto var(--footer-height);
@@ -47,16 +50,100 @@ img{
   
   
 }
-.arrow{
+#arrow{
   transform: rotate(90deg);
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
+  height:var(--arrow-height);
+  width: var(--arrow-height);
+  background-size: 0% 0rem;
+  margin: 0 auto;
+
+}
+#arrow:hover{
+  background-size: 0% 0rem;
+  transition: color .2s; 
 }
 .intro-text{
   margin-top: -5rem;
 
 }
-.content{
+#web-design{
+  max-width: 50%;
+  float: right;
+}
+.inline{
+  display:inline;
+}
+.category{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 2rem;
+  margin:2rem 0;
+}
+.category-title{
+  
+}
+.col-span-4{
+  grid-column: span 4;
+}
+.col-span-2{
+  grid-column: span 2;
+  padding-right: 0.5rem;
+}
+
+.grid-4-col{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-2-col{
+  grid-template-columns: 1fr 1fr;
+  max-width: calc(50% - 1rem);
+}
+.card{
+  border-radius: 1rem;
+  // margin: 1rem;
+  box-shadow: 0px 0px 13px 0px var(--clr-plum-20);
+}
+.card-image{
+
+}
+.card-text{
+  margin: 1rem;
+  text-align: center;
+}
+.item-title{
+  font-size: 2rem;
+  font-family: nunito, sans-serif;
+}
+.item-tags{
+  margin: 0;
+}
+.tags{
+  margin: 0;
+  padding: 0;
+}
+.tags li{
+  display: inline;
+  // float: left;
+  list-style: none;
+  margin:0 0.5rem;
+  // padding: 0 0.7rem;
+  font-size: 1.4rem;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  border-radius: 2rem;
+  // border: 1px solid var(--clr-dark-20);
+}
+.tags li::before{
+  content: '#';
+}
+.tags li::after{
+  content: ' ';
+}
+.item-thumbnail{
+  border-radius: 1rem 1rem 0 0;
+}
+#content{
 
 }
 
@@ -65,7 +152,7 @@ img{
   width: 100%;
   height: var(--footer-height);
   background-color: bisque;
-  // bottom: 0px;
+  bottom: 0px;
 }
 
 .gradient{
