@@ -17,7 +17,7 @@ Vue.component('vue-logo', {
   template: '<div id="nav-logo"> <img src="/img/ms-logo-lines.svg" alt="Mike Sonnenberg Logo"> </div>'
 });
 Vue.component('vue-footer', {
-  template: '<div id="footer" class="textcenter">&COPY; {{ new Date().getFullYear() }} Mike Sonnenberg</br>Special thanks to the FOSS contributors at Vue.js and Typed.js</&COPY;></div>'
+  template: '<div id="footer" class="text-center">&COPY; {{ new Date().getFullYear() }} Mike Sonnenberg</br>Special thanks to the FOSS contributors at Vue.js and TypeIt.js</&COPY;></div>'
 });
 new Vue({
   el: '#vue-container',
@@ -41,14 +41,14 @@ new TypeIt('#typeit')
   .type('UX/UI design')
   .pause(500)
   .delete(12)
-  .type('brand desi')
+  .type('brand')
   .pause(300)
-  .delete(10)
-  .type('web de')
+  .delete(5)
+  .type('web')
   .pause(300)
-  .delete(6)
+  .delete(3)
   .type('graphic')
   .pause(250)
   .delete()
-  .type('I am a <span class="textcherry">multidisciplinary</span> designer.')
+  .type('I am a <span class="text-cherry">multidisciplinary designer.</span>')
   .go();

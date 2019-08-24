@@ -3,6 +3,7 @@
 @import '_nav';
 @import '_utilities';
 @import '_typography';
+@import '_basicLightbox';
 
 
 /* underline begin */
@@ -27,28 +28,52 @@ a:hover{
      1px 1px 0 var(--clr-light);
 }
 /* end underline animation */
-
+img{
+  max-width: 100%;
+}
 #vue-container{
   min-height: 100vh;
   max-width: 80rem;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: var(--nav-height) 1fr 1fr var(--footer-height);
+  grid-template-rows: var(--nav-height) var(--hero-height) var(--arrow-height) auto var(--footer-height);
 }
 
-.hero{
+.hero-intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--hero-height);
+  
+  
+}
+.arrow{
+  transform: rotate(90deg);
+  font-size: 3rem;
+  text-align: center;
+}
+.intro-text{
+  margin-top: -5rem;
 
 }
 .content{
 
 }
+
 #footer{
   font-size: 1.4rem;
   width: 100%;
   height: var(--footer-height);
   background-color: bisque;
+  // bottom: 0px;
 }
 
 .gradient{
   background: linear-gradient(45deg, rgb(89, 6, 184),rgb(246, 151, 67));
+}
+
+@media screen and (max-width: 560px) {
+  .hero-intro{
+    height: calc(100vh - var(--nav-height));
+  }
 }

@@ -5,8 +5,10 @@ $variables: (
   clr-light: rgba(248, 248, 248,1),
   clr-dark: rgba(80, 80, 80,1),
 	clr-dark-80: rgba(80, 80, 80,0.8),
-  nav-height:7rem,
+  nav-height: 7rem,
   footer-height: 7rem,
+  arrow-height: 7rem,
+  hero-height: calc(100vh - var(--nav-height) - var(--footer-height)),
 );
 
 :root{
