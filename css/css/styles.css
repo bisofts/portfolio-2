@@ -227,6 +227,10 @@ summary {
   margin-top: 0.5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 nav {
   padding: 0px;
   font-weight: 600;
@@ -709,7 +713,7 @@ img {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   grid-gap: var(--grid-gap);
-  margin: 6rem 0;
+  margin: 2rem 0 6rem 0;
 }
 
 .col-span-4 {
