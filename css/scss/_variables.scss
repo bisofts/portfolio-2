@@ -15,6 +15,7 @@ $variables: (
   hero-height: calc(100vh - var(--nav-height) - var(--arrow-height)),
   grid-gap: 4rem,
   wrapper-width: 100rem,
+  padding-side: 1rem,
 );
 
 :root{

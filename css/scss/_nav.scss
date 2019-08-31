@@ -17,12 +17,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "nav-logo nav";
   margin: 0 auto;
+  padding: 0 var(--padding-side);
 }
 
 
 #nav-logo > img{
   height:5rem;
   margin-top:0.5rem;
+  
 }
 
 nav {

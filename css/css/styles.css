@@ -189,6 +189,7 @@ summary {
   --hero-height: calc(100vh - var(--nav-height) - var(--arrow-height));
   --grid-gap: 4rem;
   --wrapper-width: 100rem;
+  --padding-side: 1rem;
   font-size: 10px;
 }
 
@@ -218,6 +219,7 @@ summary {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "nav-logo nav";
   margin: 0 auto;
+  padding: 0 var(--padding-side);
 }
 
 #nav-logo > img {
@@ -636,6 +638,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: var(--hero-height);
+  max-width: 97vw;
 }
 
 #arrow {
@@ -688,7 +691,7 @@ img {
 }
 
 .intro-text {
-  margin-top: -5rem;
+  margin: -5rem 3rem 0 3rem;
 }
 
 .inline {
@@ -715,7 +718,6 @@ img {
 
 .col-span-2 {
   grid-column: span 2;
-  padding-right: 0.5rem;
 }
 
 .grid-4-col {
@@ -803,6 +805,7 @@ img {
 #content {
   max-width: var(--wrapper-width);
   margin: 0 auto;
+  padding: 0 var(--padding-side);
 }
 
 #footer {
@@ -818,8 +821,8 @@ img {
 }
 
 @media screen and (max-width: 560px) {
-  .hero-intro {
-    height: calc(100vh - var(--nav-height));
+  .card {
+    grid-column: span 2;
   }
 }
 /*# sourceMappingURL=styles.css.map */

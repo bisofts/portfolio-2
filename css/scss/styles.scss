@@ -49,17 +49,9 @@ img{
   align-items: center;
   justify-content: center;
   height: var(--hero-height);
-  
-  
+  max-width: 97vw;
 }
-// @keyframes fade-in{
-//   0%{
-//     opacity: 0;
-//   }
-//   100%{
-//     opacity: 1;
-//   }
-// }
+
 #arrow{
   transform: rotate(90deg);
   font-size: 6rem;
@@ -92,9 +84,10 @@ img{
 }
 
 .intro-text{
-  margin-top: -5rem;
-
+  // margin-top: -5rem;
+  margin: -5rem 3rem 0 3rem;
 }
+
 
 .inline{
   display:inline;
@@ -116,7 +109,6 @@ img{
 }
 .col-span-2{
   grid-column: span 2;
-  padding-right: 0.5rem;
 }
 
 .grid-4-col{
@@ -189,6 +181,7 @@ img{
 #content{
   max-width: var(--wrapper-width);
   margin: 0 auto;
+  padding: 0 var(--padding-side);
 }
 
 #footer{
@@ -197,6 +190,7 @@ img{
   height: var(--footer-height);
   background-color: bisque;
   bottom: 0px;
+  
 }
 
 .gradient{
@@ -205,6 +199,20 @@ img{
 
 @media screen and (max-width: 560px) {
   .hero-intro{
-    height: calc(100vh - var(--nav-height));
+    //height: calc(100vh - var(--nav-height));
   }
+    .category{
+
+    }
+    #content{
+  // padding: 0 1rem;
+    }
+.hero-intro{
+  // padding: 0 3rem;
+  // width: 100%;
+  
 }
+    .card{
+      grid-column: span 2;
+    }
+  }
