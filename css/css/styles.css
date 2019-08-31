@@ -709,7 +709,7 @@ img {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   grid-gap: var(--grid-gap);
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 
 .col-span-4 {
@@ -814,10 +814,6 @@ img {
   height: var(--footer-height);
   bottom: 0px;
   margin-top: 5rem;
-}
-
-.gradient {
-  background: linear-gradient(45deg, #5906b8, #f69743);
 }
 
 @media screen and (max-width: 560px) {

@@ -60,7 +60,6 @@ img{
   width: var(--arrow-height);
   background-size: 0% 0rem;
   margin: 0 auto;
-  // opacity: 0;
   animation: fade-in 11.8s;
 }
 @keyframes fade-in {
@@ -99,7 +98,7 @@ img{
   display: grid;
   grid-template-rows: auto auto;
   grid-gap: var(--grid-gap);
-  margin:2rem 0;
+  margin:6rem 0;
 }
 .category-title{
   
@@ -193,10 +192,6 @@ img{
   margin-top: 5rem;
 }
 
-.gradient{
-  background: linear-gradient(45deg, rgb(89, 6, 184),rgb(246, 151, 67));
-}
-
 @media screen and (max-width: 560px) {
   .hero-intro{
     //height: calc(100vh - var(--nav-height));
@@ -207,7 +202,7 @@ img{
   .intro-large{
     font-size: 5rem;
   }
-    .card{
-      grid-column: span 2;
-    }
+  .card{
+    grid-column: span 2;
   }
+}
