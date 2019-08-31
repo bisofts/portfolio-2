@@ -56,7 +56,7 @@ img{
   transform: rotate(90deg);
   font-size: 6rem;
   text-align: center;
-  height:var(--arrow-height);
+  height: var(--arrow-height);
   width: var(--arrow-height);
   background-size: 0% 0rem;
   margin: 0 auto;
@@ -188,9 +188,9 @@ img{
   font-size: 1.4rem;
   width: 100%;
   height: var(--footer-height);
-  background-color: bisque;
+  // background-color: bisque;
   bottom: 0px;
-  
+  margin-top: 5rem;
 }
 
 .gradient{
@@ -201,17 +201,12 @@ img{
   .hero-intro{
     //height: calc(100vh - var(--nav-height));
   }
-    .category{
-
-    }
-    #content{
-  // padding: 0 1rem;
-    }
-.hero-intro{
-  // padding: 0 3rem;
-  // width: 100%;
-  
-}
+  .intro-small{
+    font-size: 3.2rem;
+  }
+  .intro-large{
+    font-size: 5rem;
+  }
     .card{
       grid-column: span 2;
     }

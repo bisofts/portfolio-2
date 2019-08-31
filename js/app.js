@@ -17,7 +17,7 @@ Vue.component('vue-logo', {
   template: '<div id="nav-logo"> <img src="/img/ms-logo-lines.svg" alt="Mike Sonnenberg Logo"> </div>'
 });
 Vue.component('vue-footer', {
-  template: '<div id="footer" class="text-center">&COPY; {{ new Date().getFullYear() }} Mike Sonnenberg</br>Special thanks to the FOSS contributors at Vue.js and TypeIt.js</&COPY;></div>'
+  template: '<div id="footer" class="text-center">&COPY; {{ new Date().getFullYear() }} ms-portfolio</br>Special thanks to the FOSS contributors at Vue.js and TypeIt.js</&COPY;></div>'
 });
 new Vue({
   el: '#vue-container',

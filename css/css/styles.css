@@ -812,8 +812,8 @@ img {
   font-size: 1.4rem;
   width: 100%;
   height: var(--footer-height);
-  background-color: bisque;
   bottom: 0px;
+  margin-top: 5rem;
 }
 
 .gradient {
@@ -821,6 +821,12 @@ img {
 }
 
 @media screen and (max-width: 560px) {
+  .intro-small {
+    font-size: 3.2rem;
+  }
+  .intro-large {
+    font-size: 5rem;
+  }
   .card {
     grid-column: span 2;
   }
