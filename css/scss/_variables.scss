@@ -1,16 +1,20 @@
 $variables: (
   clr-plum: rgba(63, 21, 79, 1),
   clr-plum-80: rgba(63, 21, 79, 0.8),
+  clr-plum-30: rgba(63, 21, 79, 0.3),
   clr-plum-20: rgba(63, 21, 79, 0.2),
 	clr-cherry: rgba(228, 0, 43, 1),
   clr-light: rgba(248, 248, 248,1),
+  clr-light-80: rgba(248, 248, 248,0.8),
   clr-dark: rgba(80, 80, 80,1),
 	clr-dark-80: rgba(80, 80, 80,0.8),
   clr-dark-20: rgba(80, 80, 80,0.2),
-  nav-height: 7rem,
+  nav-height: 8rem,
   footer-height: 7rem,
-  arrow-height: 10rem,
+  arrow-height: 12rem,
   hero-height: calc(100vh - var(--nav-height) - var(--arrow-height)),
+  grid-gap: 4rem,
+  wrapper-width: 100rem,
 );
 
 :root{

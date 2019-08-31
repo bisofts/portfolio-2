@@ -47,10 +47,14 @@
 
 <body>
   <div id="vue-container">
-    <div id="vue-nav">
-      <vue-logo></vue-logo>
-      <vue-nav></vue-nav>
-    </div>
+
+    <div class="nav-bg">
+      <div id="vue-nav">
+        <vue-logo></vue-logo>
+        <vue-nav></vue-nav>
+      </div>
+    </div> <!-- end nav-bg-->
+
     <div class="hero-intro">
       <div></div>
       <div class="intro-text">
@@ -58,22 +62,41 @@
         <h1 class="text-cherry">Mike Sonnenberg</h1>
         <h2> <span id="typeit"></span></h2>
       </div>
-
-      <div></div>
     </div>
     <span class="arrow" id="arrow">
-      <h2><a href="#arrow" id="arrow">></a></h2>
+      <h2><a href="#arrow" id="arrow" class="slide-in-bottom">></a></h2>
     </span>
 
     <div id="content">
-      <div class="category grid-4-col">
-        <div class="category-title col-span-4">
+      <div class="category grid-2-col">
+        <div class="category-title col-span-2">
           <h2>UX</h2>
         </div>
         <div class="card">
           <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
           <div class="card-text">
             <h2 class="item-title">Nisobu Lounge</h2>
+            <div class="item-snippet">
+              <p>Creating a sense of community at SMC's Center for Media and Design campus, and more text to fill space.</p>
+            </div>
+            <div class="item-tags">
+              <ul class="tags">
+                <li>user_research</li>
+                <li>prototyping</li>
+                <li>interaction_design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
+          <div class="card-text">
+            <div class="item-title">
+              <h2 class="item-title">Nisobu Lounge</h2>
+            </div>
+            <div class="item-snippet">
+              <p>Creating a sense of community at SMC's</p>
+            </div>
             <div class="item-tags">
               <ul class="tags">
                 <li>user_research</li>
@@ -109,95 +132,84 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
-          <div class="card-text">
-            <h2 class="item-title">Nisobu Lounge</h2>
-            <div class="item-tags">
-              <ul class="tags">
-                <li>user_research</li>
-                <li>prototyping</li>
-                <li>interaction_design</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="inline">
-        <div class="category grid-2-col">
-          <div class="category-title col-span-2">
-            <h2>Branding</h2>
-          </div>
-          <div class="card">
-            <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
-            <div class="card-text">
-              <h2 class="item-title">Nisobu Lounge</h2>
-              <div class="item-tags">
-                <ul class="tags">
-                  <li>user_research</li>
-                  <li>prototyping</li>
-                  <li>interaction_design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
-            <div class="card-text">
-              <h2 class="item-title">Nisobu Lounge</h2>
-              <div class="item-tags">
-                <ul class="tags">
-                  <li>user_research</li>
-                  <li>prototyping</li>
-                  <li>interaction_design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="inline">
-        <div class="category grid-2-col" id="web-design">
-          <div class="category-title col-span-2">
-            <h2>Web Design</h2>
-          </div>
-          <div class="card">
-            <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
-            <div class="card-text">
-              <h2 class="item-title">Nisobu Lounge</h2>
-              <div class="item-tags">
-                <ul class="tags">
-                  <li>user_research</li>
-                  <li>prototyping</li>
-                  <li>interaction_design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
-            <div class="card-text">
-              <h2 class="item-title">Nisobu Lounge</h2>
-              <div class="item-tags">
-                <ul class="tags">
-                  <li>user_research</li>
-                  <li>prototyping</li>
-                  <li>interaction_design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> <!-- end category -->
 
-      <div class="item"><img src="/img/smc-cmd-mockup.png" alt="smc model"></div>
-      <p>kjn adskfjaksdflka sdflkaf sdkasd jfnkasjdfn Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis qui reprehenderit alias distinctio aut. <a href="#">Fugiat eligendi tempora, quo omnis</a> itaque unde eveniet autem adipisci voluptate. Qui dicta deleniti sint voluptate rem labore tempora quisquam modi impedit itaque, velit autem debitis similique architecto minus aperiam iste nobis, nesciunt sunt non?</p>
-      <p>kjn adskfjaksdflka sdflkaf sdkasd jfnkasjdfn Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis qui reprehenderit alias distinctio aut. <a href="#">Fugiat eligendi tempora, quo omnis</a> itaque unde eveniet autem adipisci voluptate. Qui dicta deleniti sint voluptate rem labore tempora quisquam modi impedit itaque, velit autem debitis similique architecto minus aperiam iste nobis, nesciunt sunt non?</p>
-    </div>
+      <!-- <div class="inline-grid"> -->
+      <div class="category grid-2-col">
+        <div class="category-title col-span-2">
+          <h2>Branding</h2>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
+          <div class="card-text">
+            <h2 class="item-title">Nisobu Lounge</h2>
+            <div class="item-tags">
+              <ul class="tags">
+                <li>user_research</li>
+                <li>prototyping</li>
+                <li>interaction_design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
+          <div class="card-text">
+            <h2 class="item-title">Nisobu Lounge</h2>
+            <div class="item-tags">
+              <ul class="tags">
+                <li>user_research</li>
+                <li>prototyping</li>
+                <li>interaction_design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end category -->
+
+
+      <!-- <div class="inline-grid"> -->
+      <div class="category grid-2-col" id="web-design">
+        <div class="category-title col-span-2">
+          <h2>Web Design</h2>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
+          <div class="card-text">
+            <h2 class="item-title">Nisobu Lounge</h2>
+            <div class="item-tags">
+              <ul class="tags">
+                <li>user_research</li>
+                <li>prototyping</li>
+                <li>interaction_design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="/img/smc-cmd-mockup.png" alt="smc model" class="item-thumbnail"></div>
+          <div class="card-text">
+            <h2 class="item-title">Nisobu Lounge</h2>
+            <div class="item-tags">
+              <ul class="tags">
+                <li>user_research</li>
+                <li>prototyping</li>
+                <li>interaction_design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end category -->
+    </div> <!-- end content -->
+
+
+
+
     <div id="vue-footer">
       <vue-footer></vue-footer>
     </div>
-  </div>
+
+  </div> <!-- end vue-container -->
 </body>
 
 <footer>

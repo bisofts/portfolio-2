@@ -1,14 +1,24 @@
+.nav-bg{
+  position: sticky;
+  display: flex;
+  background-color:var(--clr-light);
+  width: 100%;
+  height: var(--nav-height);
+  top:0;
+  z-index: 90;
+}
+
 #vue-nav{
   min-height: var(--nav-height);
+  max-width: var(--wrapper-width);
+  width: 100%;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "nav-logo nav";
-  position: sticky;
-  top:0;
-  background-color:var(--clr-light);
-  z-index: 100;
+  margin: 0 auto;
 }
+
 
 #nav-logo > img{
   height:5rem;
