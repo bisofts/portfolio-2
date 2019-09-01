@@ -215,8 +215,8 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 0.5fr 1.5fr;
+      grid-template-columns: 0.5fr 1.5fr;
       grid-template-areas: "nav-logo nav";
   margin: 0 auto;
   padding: 0 var(--padding-side);
@@ -266,8 +266,7 @@ nav ul li a:hover {
     z-index: -1;
     background: var(--clr-plum);
     opacity: 0;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    display: none;
   }
   .nav-container ul {
     position: absolute;
@@ -386,12 +385,35 @@ nav ul li a:hover {
 #nav:checked ~ .nav-container {
   z-index: 9990;
   opacity: 1;
+  display: inline-block;
+  -webkit-animation: nav-container-fade-in 0.2s;
+          animation: nav-container-fade-in 0.2s;
 }
 
 #nav:checked ~ .nav-container ul li a {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  -webkit-animation: nav-container-fade-in 0.2s;
+          animation: nav-container-fade-in 0.2s;
+}
+
+@-webkit-keyframes nav-container-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nav-container-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .text-plum {
@@ -462,6 +484,20 @@ nav ul li a:hover {
   font-weight: 400;
   src: local("Work Sans"), local("WorkSans-Regular"), url("../../fonts/work-sans-v3-latin-regular.woff2") format("woff2"), url("../../fonts/work-sans-v3-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito-ExtraLight"), url("../../fonts/Nunito-ExtraLight.woff2") format("woff2"), url("../../fonts/Nunito-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local("Nunito-light"), url("../../fonts/Nunito-Light.woff2") format("woff2"), url("../../fonts/Nunito-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
@@ -649,16 +685,17 @@ img {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   font-size: 6rem;
+  font-weight: 300;
   text-align: center;
   height: var(--arrow-height);
   width: var(--arrow-height);
   background-size: 0% 0rem;
   margin: 0 auto;
-  -webkit-animation: fade-in 11.8s;
-          animation: fade-in 11.8s;
+  -webkit-animation: arrow-fade-in 11.8s;
+          animation: arrow-fade-in 11.8s;
 }
 
-@-webkit-keyframes fade-in {
+@-webkit-keyframes arrow-fade-in {
   0% {
     opacity: 0;
     margin-top: 2rem;
@@ -673,7 +710,7 @@ img {
   }
 }
 
-@keyframes fade-in {
+@keyframes arrow-fade-in {
   0% {
     opacity: 0;
     margin-top: 2rem;
@@ -690,8 +727,8 @@ img {
 
 #arrow:hover {
   background-size: 0% 0rem;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
 }
 
 .intro-text {
@@ -826,6 +863,39 @@ img {
   }
   .intro-large {
     font-size: 5rem;
+  }
+  #arrow {
+    font-weight: 200;
+    font-size: 4rem;
+    margin-top: -2rem;
+  }
+  @-webkit-keyframes arrow-fade-in {
+    0% {
+      opacity: 0;
+      margin-top: 0;
+    }
+    95% {
+      opacity: 0;
+      margin-top: 0;
+    }
+    100% {
+      opacity: 1;
+      margin-top: -2rem;
+    }
+  }
+  @keyframes arrow-fade-in {
+    0% {
+      opacity: 0;
+      margin-top: 0;
+    }
+    95% {
+      opacity: 0;
+      margin-top: 0;
+    }
+    100% {
+      opacity: 1;
+      margin-top: -2rem;
+    }
   }
   .card {
     grid-column: span 2;

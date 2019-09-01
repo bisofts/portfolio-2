@@ -7,6 +7,20 @@
 }
 @font-face {
     font-family: 'Nunito';
+    src: local("Nunito-ExtraLight"),url('../../fonts/Nunito-ExtraLight.woff2') format('woff2'),
+        url('../../fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: local("Nunito-light"),url('../../fonts/Nunito-Light.woff2') format('woff2'),
+        url('../../fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito';
     src: local("Nunito"), local("Nunito-Regular"), url('../../fonts/Nunito-Regular.woff2') format('woff2'),
         url('../../fonts/Nunito-Regular.woff') format('woff');
     font-weight: normal;
@@ -26,6 +40,7 @@
     font-weight: 800;
     font-style: normal;
 }
+
 body, html {
   font-family: 'Work Sans', Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
